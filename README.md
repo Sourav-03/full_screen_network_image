@@ -1,30 +1,24 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Full Screen Network Image
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+The Full Screen Network Image is package to develop your code much faster to display network images in Full screen view.
+Also simple and easy to use.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+## Installation
 
-TODO: Put a short description of the package here that helps potential users know whether this
-package might be useful for them.
+1. Add the latest version of package to your pubspec.yaml
+```yaml
+dependencies:
+  full_screen_network_image: ^1.0.0
+```
 
-## Features
+2. Import the package and use it in your flutter App.
+```dart
+import 'package:full_screen_network_image/full_screen_network_image.dart';
+```
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## Sample
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples to `/example` folder.
+#### Fullscreen NetworkImage
 
 ```dart
 class HomeScreen extends StatelessWidget {
@@ -32,13 +26,13 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //Add your Image URL to display in full screen view
-    return FullScreenNetworkImage('https://picsum.photos/200/300');
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home Page'),
+      ),
+      //Add your Image URL to display in full screen view
+      body: FullScreenNetworkImage('https://picsum.photos/200/300'),
+    );
   }
 }
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to contribute to the
-package, how to file issues, what response they can expect from the package authors, and more.

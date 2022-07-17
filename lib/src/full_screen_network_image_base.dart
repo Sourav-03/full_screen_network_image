@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Checks if you are awesome. Spoiler: you are.
 class FullScreenNetworkImage extends StatefulWidget {
   final ImageFrameBuilder? frameBuilder;
 
